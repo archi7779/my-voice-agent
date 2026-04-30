@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { RedisModule } from './common/redis/redis.module';
 import { UseRedisModule } from './modules/useRedis/useRedis.module';
 import { UseChatModule } from './modules/useChat/useChat.module';
+import { UseVoiceModule } from './modules/useVoice/useVoice.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { UseChatModule } from './modules/useChat/useChat.module';
     RedisModule,
     UseRedisModule,
     UseChatModule,
+    UseVoiceModule,
   ],
   controllers: [AppController],
   providers: [AppService],

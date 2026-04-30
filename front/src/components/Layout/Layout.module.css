@@ -1,7 +1,8 @@
-.lдоayout {
+.layout {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: hidden;
 }
 
 .header {
@@ -11,6 +12,7 @@
   padding: 12px 24px;
   background-color: #1a1a2e;
   color: #ffffff;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -41,5 +43,5 @@
 
 .main {
   flex: 1;
-  overflow-y: auto;
+  min-height: 0;
 }
